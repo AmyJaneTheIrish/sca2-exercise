@@ -3,14 +3,26 @@
 
 const arr = [7, 8, 15, 14, 13, 70, 44, 35, 88, 77, false, "7", "hi", null];
 
-const multOf7 = el => {
-  // TODO
-};
+const filter1 = arr.filter(x => x % 7 === 0);
+console.log(filter1)
 
-Array.prototype.filter = function(fun) {
-  // TODO
-};
+// const multOf7 = el => {
+// };
 
-const newArr = arr.filter(multOf7);
+// const newArr = arr.filter(multOf7);
+// console.log(newArr);
 
-console.log(newArr);
+
+
+
+
+
+
+
+
+
+
+
+// var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+// const result = words.filter(word => word.length > 6);
+// console.log(result);

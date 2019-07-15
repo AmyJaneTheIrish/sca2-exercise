@@ -3,12 +3,6 @@
 
 const arr = [0, 1, 2, 3, 4];
 
-const triple = () => {
-  // TODO
-};
-
-Array.prototype.map = function(fun) {
-  // TODO
-};
-
-console.log(arr.map(triple));
+// const triple = () => {};
+const map1 = arr.map(x => x * 3);
+console.log(map1)

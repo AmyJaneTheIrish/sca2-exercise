@@ -39,7 +39,11 @@ function factorialize(num) {
 // if the two arrays are of unequal length
 // Example: zip([1, 2, 3], [5, 3, 1]) === [[1, 5], [2, 3], [3, 1]]
 // const zip = (arr1, arr2) => {
-// return arr1.reduce() 
+//   let x = arr1.reduce((a, b) => a + b, 0) 
+//   let y = arr2.reduce((a, b) => a + b, 0)
+//   if x === y {
+//     return True
+//   }
 // };
 // console.log(zip([1,2,3,4], [1,2,3,3]))
 
