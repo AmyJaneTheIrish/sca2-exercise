@@ -7,8 +7,6 @@ const assert = require("assert");
 const tokenize = str => {
   return str.split(" ")
 };
-console.log(tokenize("no thanks mate"))
-
 
 // TODO - write a function which reverses the string
 const reverse = str => {
@@ -17,14 +15,12 @@ const reverse = str => {
   let y = x.join("")
   return y
 };
-console.log(reverse("Big oof"))
 
 
 // TODO - write a function which returns the inputted array without duplicate elements
 const uniqueOnes = function(arr) {
   return new Set(arr)
 };
-console.log(uniqueOnes(["hi", "hi", "hello", "whatup"]))
 
 
 function factorialize(num) {
@@ -36,7 +32,6 @@ function factorialize(num) {
       return (num * factorialize(num - 1));
   }
 }
-console.log(factorialize(1));
 
 
 
@@ -78,3 +73,7 @@ assert(1 < 2);
 assert(1 + 2 === 3);
 assert([2, 3][0] === 2);
 // asssert (reverse("3df") === "fd3")
+console.log(tokenize("no thanks mate"))
+console.log(reverse("Big oof"))
+console.log(uniqueOnes(["hi", "hi", "hello", "whatup"]))
+console.log(factorialize(1));
