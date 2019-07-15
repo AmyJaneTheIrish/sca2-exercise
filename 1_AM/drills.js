@@ -14,7 +14,7 @@ console.log(tokenize("no thanks mate"))
 const reverse = str => {
   let array1 = str.split("")
   let x = array1.reverse()
-  let y = x.join()
+  let y = x.join("")
   return y
 };
 console.log(reverse("Big oof"))
@@ -22,28 +22,50 @@ console.log(reverse("Big oof"))
 
 // TODO - write a function which returns the inputted array without duplicate elements
 const uniqueOnes = function(arr) {
-  return uniqueOnes.from(new Set(arr))
+  return new Set(arr)
 };
-console.log(uniqueOnes(["hi", "hi", "hello"]))
+console.log(uniqueOnes(["hi", "hi", "hello", "whatup"]))
 
-const factorial = num => {
-  // TODO - write a function which returns the factorial of a positive integer
-};
 
-const zip = (arr1, arr2) => {
-  // TODO - write a function which combines two arrays into an array of 2-element arrays and returns -1
-  // if the two arrays are of unequal length
-  // Example: zip([1, 2, 3], [5, 3, 1]) === [[1, 5], [2, 3], [3, 1]]
-};
+function factorialize(num) {
+  if (num < 0) 
+        return -1;
+  else if (num == 0) 
+      return 1;
+  else {
+      return (num * factorialize(num - 1));
+  }
+}
+console.log(factorialize(1));
+
+
+
+// TODO - write a function which combines two arrays into an array of 2-element arrays and returns -1
+// if the two arrays are of unequal length
+// Example: zip([1, 2, 3], [5, 3, 1]) === [[1, 5], [2, 3], [3, 1]]
+// const zip = (arr1, arr2) => {
+// return arr1.reduce() 
+// };
+// console.log(zip([1,2,3,4], [1,2,3,3]))
+
 
 const unzip = arr => {
   // TODO - Write a function which does the opposite of `zip()`
 };
 
-const shiftRight = (str, num) => {
   // TODO - write a function which shifts a string `num` characters to the right
   // Example = shiftThree("Hello") === "lloHe"
+const shiftRight = (str, num) => {
+  arr = str.split("")
+  for(let i =0; i<num; i++) {
+    const l =arr.shift()
+    arr.push(l)
+  }
+  newStr = arr.join("")
+  return newStr
 };
+console.log(shiftRight("Hello", 3))
+
 
 const announceDate = () => {
   // TODO - write a function which returns the current date in the following format:
